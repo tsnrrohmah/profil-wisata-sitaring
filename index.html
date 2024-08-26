@@ -1,303 +1,988 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Desa Wisata Sitaring</title>
+<head>
+    <meta charset="utf-8">
+    <title>Wisata Sitaring</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- FOnts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/logo/logo-sitaring.jpg" rel="icon">
 
-        <!-- Feather Icons -->
-        <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-        <!-- My Style -->
-        <link rel="stylesheet" type="" href="assets/css/style.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Favicon  -->
-        <link rel="icon" href="assets/img/logo/logo-sitaring.jpg">
-    </head>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <body>
-        <!-- Navbar Start -->
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <img src="assets/img/logo/logo-sitaring-1.jpg" alt="Wisata Sitaring Logo" class="logo-img">
-                <span class="logo-text">Wisata Sitaring</span>
-            </div>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-            <!-- <div class="navbar-nav">
-                <a href="#home">Home</a>
-                <a href="#about">Tentang Kami</a>
-                <a href="#Paket Wisata">Paket Wisata</a>
-                <a href="#fasilitas">Fasilitas</a>
-                <a href="#Galeri">Galeri</a>
-                <a href="#contact">Kontak</a>
-            </div> -->
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
-            <div class="navbar-nav">
-                <a href="index.html">Beranda</a>
-                <a href="#about">Tentang Kami</a>
-                <!-- Dropdown Menu -->
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#">
-                        Wisata
-                        <i data-feather="chevron-down" class="dropdown-icon"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <!-- <a href="#wisata">Wisata</a> -->
-                        <a href="paket-wisata.html">Paket Wisata</a>
-                        <a href="fasilitas.html">Fasilitas</a>
-                        <a href="#galeri">Galeri</a>
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <img class="img-fluid" src="img/logo-sitaring.png" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        
+                        <a href="tourism.html" class="nav-item nav-link">Tourism</a>
+                        
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/6-ls.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 text-center">
+                                    <h1 class="display-1 text-white mb-4 animated zoomIn">Sitaring</h1>
+                                    <h1 class="display-1 text-white mb-4 animated zoomIn">Singgahan Tanah Miring</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <a href="#contact">Hubungi Kami</a>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/5-ls.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 text-center">
+                                    <h1 class="display-1 text-white mb-4 animated zoomIn">Sitaring</h1>
+                                    <h1 class="display-1 text-white mb-4 animated zoomIn">Singgahan Tanah Miring</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="navbar-extra">
-                <!-- Ikon Media Sosial -->
-                <a href="https://www.instagram.com/sitaringfest?igsh=Z3ZrbzVyNWl1dnRz" target="_blank"><i data-feather="instagram"></i></a>
-                <a href="https://www.facebook.com/share/g/KCHePijHVJBYPpQG/?mibextid=K35XfP target="_blank"><i data-feather="facebook"></i></a>
-                <a href="https://youtube.com/@mbahtugi7893?si=L1AQIM8iFM5F7ErF" target="_blank"><i data-feather="youtube"></i></a>
-                <!-- Ikon Menu Hamburger -->
-                <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-            </div>
-        </nav>
-        <!-- Navbar end -->
-
-
-        <!-- Hero Section start-->
-        <section class="hero" id="home">
-            <div class="hero-slider">
-            <div class="slide">
-                <img src="assets/img/4-ls.jpg" alt="Image 3">
-            </div>
-            <div class="slide">
-                <img src="assets/img/6-ls.jpg" alt="Image 2">
-            </div>
-            <div class="slide">
-                <img src="assets/img/5-ls.jpg" alt="Image 3">
-            </div>
-            <!-- Add more slides as needed -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="prev" aria-label="Previous Slide">&#10094;</button>
-        <button class="next" aria-label="Next Slide">&#10095;</button>
+    </div>
+    <!-- Carousel End -->
 
-            <main class="content">
-                <h1><span></span>Sejuk Segar</h1>
-                <h1>Singgah Sebentar</h1>
-        </section>
-        <!-- Hero Section end-->
-
-    <!-- About Section Start -->
-    <section id="about" class="about">
-        <h2><span>Wisata Sitaring</span></h2>
-    
-        <div class="row">
-            <div class="about-img">
-                <img src="assets/img/7.jpg" alt="Tentang Kami">
-            </div>
-            <div class="content">
-                <h3>Apa Itu Wisata Sitaring?</h3>
-                <p>Sitaring, atau yang lebih dikenal dengan Singgahan Tanah Miring, berawal dari inisiatif warga Desa
-                    Kemambang yang
-                    memiliki hobi motor trail. Melihat kurangnya fasilitas untuk menyalurkan hobi tersebut, mereka
-                    berinisiatif untuk
-                    memanfaatkan lahan milik pemerintah desa. Pada tahun 2018, Sitaring pun resmi berdiri di Dusun Puwono,
-                    Desa
-                    Kemambang.</p>
-                <p>Bagi Anda yang mencari tempat untuk bersantai dan menikmati alam, Sitaring adalah pilihan yang tepat.
-                    Terletak di
-                    atas
-                    bukit Kemambang, Banyubiru, pengunjung dapat menikmati keindahan alam yang menakjubkan, terutama
-                    panorama Rawa
-                    Pening
-                    dari ketinggian. Selain itu, Sitaring juga menawarkan pengalaman camping yang seru bersama keluarga.
-                    Dengan
-                    mengembangkan potensi alam setempat, Desa Kemambang berupaya menjadikan Sitaring sebagai destinasi
-                    wisata yang
-                    menarik
-                    dan berkelanjutan.</p>
+    <!-- Article Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid" style="height: 465px; width: 510px;" src="img/3.jpg" alt="">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="section-title">
+                        
+                        <h1 class="display-6">Jelajahi Pesona Desa Wisata Sitaring</h1>
+                    </div>
+                    <p class="mb-4 text-justify">Sitaring, atau yang lebih dikenal dengan Singgahan Tanah Miring, berawal
+                        dari inisiatif warga Desa Kemambang yang
+                        memiliki hobi motor trail. Melihat kurangnya fasilitas untuk menyalurkan hobi tersebut, mereka
+                        berinisiatif untuk
+                        memanfaatkan lahan milik pemerintah desa. Pada tahun 2018, Sitaring pun resmi berdiri di Dusun
+                        Puwono, Desa Kemambang.</p>
+                    <p class="mb-4 text-justify">Bagi Anda yang mencari tempat untuk bersantai dan menikmati alam, Sitaring
+                        adalah pilihan yang tepat. Terletak di atas
+                        bukit Kemambang, Banyubiru, pengunjung dapat menikmati keindahan alam yang menakjubkan, terutama
+                        panorama Rawa Pening
+                        dari ketinggian 1.100 Mdpl. Selain itu, Sitaring juga menawarkan pengalaman camping yang seru bersama keluarga.
+                        Dengan
+                        mengembangkan potensi alam setempat, Desa Kemambang berupaya menjadikan Sitaring sebagai destinasi
+                        wisata yang menarik
+                        dan berkelanjutan.</p>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- About Section End -->
+    </div>
+    <!-- Article End -->
 
 
-    <!-- Fasilitas Section Start -->
-    <!-- <section id="fasilitas" class="fasilitas">
-        <h2><span>Fasilitas Wisata</span></h2>
-    
-        <div class="row">
-    
-        <div class="fasilitas-card">
-            <img src="assets/img/camp-ground-2.jpg" alt="Camping Ground" class="fasilitas-card-img">
-            <h3 class="fasilitas-card-title">Camping Ground</h3>
-            <p class="fasilitas-card-description">Nikmati petualangan berkemah yang menakjubkan dengan pemandangan alam yang
-                memesona dan suasana tenang yang menyejukkan.</p>
-        </div>
-    
-            <div class="fasilitas-card">
-                <img src="assets/img/cafe-1.jpg" alt="Café" class="fasilitas-card-img">
-                <h3 class="fasilitas-card-title">Café</h3>
-                <p class="fasilitas-card-description">Nikmati aneka minuman segar dan hidangan lezat sambil bersantai di café kami
-                    yang nyaman dan ramah.</p>
-            </div>
-    
-            <div class="fasilitas-card">
-                <img src="assets/img/gazebo-2.jpg" alt="Spot Foto" class="fasilitas-card-img">
-                <h3 class="fasilitas-card-title">Spot Foto</h3>
-                <p class="fasilitas-card-description">Abadikan momen indah di spot foto kami yang menawan, dengan latar belakang
-                    pemandangan yang memukau.</p>
-            </div>
-    
-        <div class="fasilitas-card">
-            <img src="assets/img/parkir.jpg" alt="Area Parkir" class="fasilitas-card-img">
-            <h3 class="fasilitas-card-title">Area Parkir</h3>
-            <p class="fasilitas-card-description">Nikmati kemudahan parkir dengan area yang luas dan aman untuk kenyamanan Anda
-                selama berkunjung.</p>
-        </div>
-    
-            <div class="fasilitas-card">
-                <img src="assets/img/toilet-umum.jpg" alt="Toilet Umum" class="fasilitas-card-img">
-                <h3 class="fasilitas-card-title">Toilet Umum</h3>
-                <p class="fasilitas-card-description">Fasilitas toilet umum kami terjaga kebersihannya, memberikan
-                    kenyamanan dan kemudahan bagi Anda selama berwisata.</p>
-            </div>
-    
-            <div class="fasilitas-card">
-                <img src="assets/img/mushola.jpg" alt="Mushola" class="fasilitas-card-img">
-                <h3 class="fasilitas-card-title">Mushola</h3>
-                <p class="fasilitas-card-description">Kami menyediakan mushola yang nyaman dan bersih, memudahkan Anda untuk
-                    beribadah dengan khusyuk di tengah perjalanan wisata.</p>
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/2.jpg" alt="">
+                            <img class="img-fluid bg-white w-70 wow fadeIn" data-wow-delay="0.2s" src="img/4.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white w-70 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/6.jpg" alt="">
+                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/9.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="about-section-title">
+                        <p class="fs-5 fw-medium fst-italic">About Us</p>
+                        <h1 class="display-6">Temukan Keindahan Alam Di Desa Wisata Sitaring</h1>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-4">
+                            <img class="img-fluid bg-white w-100" src="img/1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5>Udara Segar dan Pemandangan Yang Indah</h5>
+                            <p class="mb-0 text-justify">Di Sitaring View, Anda akan disambut dengan pemandangan alam yang menakjubkan, di mana hamparan hijau dan lanskap
+                            yang mempesona berpadu dengan udara segar yang menyegarkan jiwa.</p>
+                        </div>
+                    </div>
+                    <div class="border-top mb-4"></div>
+                    <div class="row g-3">
+                        <div class="col-sm-8">
+                            <h5>Camping Ground Nyaman untuk Petualangan Anda</h5>
+                            <p class="mb-0 text-justify">Anda dapat menginap di camping ground yang nyaman dan asri, menjadikan malam Anda di bawah langit bertabur bintang
+                            sebagai pengalaman yang tak terlupakan.</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-fluid bg-white w-100" src="img/camp-ground-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section> -->
-    <!-- Fasilitas Section End -->
+    </div>
+    <!-- About End -->
 
 
-    <!-- Paket Wisata Section Start -->
-    <section id="paket-wisata" class="paket-wisata">
-        <h2><span>Paket Wisata</span></h2>
-    
-        <div class="paket-row">
-            <div class="paket-card">
-                <img src="assets/img/kopi.jpg" alt="Paket 1" class="paket-card-img">
-                <h3 class="paket-card-title">Paket A</h3>
-                <p class="paket-card-description">Nikmati petualangan luar biasa dengan Paket A, yang mencakup tur eksklusif
-                    dan akomodasi premium. Ideal untuk para petualang dan pecinta alam.</p>
+    <!-- Destinations Start -->
+    <div class="container-fluid product py-5 my-5">
+        <div class="container py-5">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic ">Destinations</p>
+                <h1 class="display-6">Destinasi Desa Wisata Sitaring View</h1>
             </div>
-    
-            <div class="paket-card">
-                <img src="assets/img/cafe.jpg" alt="Paket 2" class="paket-card-img">
-                <h3 class="paket-card-title">Paket B</h3>
-                <p class="paket-card-description">Rasakan kemewahan dengan Paket B, menawarkan pengalaman santai dan mewah.
-                    Termasuk spa, kuliner, dan tur pribadi.</p>
-            </div>
-    
-            <div class="paket-card">
-                <img src="assets/img/camp-2.jpg" alt="Paket 3" class="paket-card-img">
-                <h3 class="paket-card-title">Paket C</h3>
-                <p class="paket-card-description">Paket C menawarkan pengalaman keluarga yang menyenangkan dengan aktivitas
-                    yang cocok untuk semua usia, dari petualangan hingga relaksasi.</p>
+            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/camp-ground-2.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="destination-title">Camping Ground</h4>
+                        <span class="destination-text-body">Temukan petualangan sejati di Sitaring View, di mana keindahan alam dan
+                            kenyamanan berkemah berpadu sempurna di bawah bintang-bintang.</span>
+                    </div>
+                </a>
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/7.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="destination-title">Spot Foto</h4>
+                        <span class="destination-text-body">Abadikan momen indah di spot foto kami yang menawan, dengan latar belakang
+                            pemandangan alam yang memukau dan tak terlupakan.</span>
+                    </div>
+                </a>
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/11.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="destination-title">Sunset Point</h4>
+                        <span class="destination-text-body">Rasakan keajaiban matahari terbenam di Sitaring View, di mana warna-warna
+                            langit menciptakan pemandangan yang indah setiap sore.</span>
+                    </div>
+                </a>
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/cafe-3.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="destination-title">Café Sitaring</h4>
+                        <span class="destination-text-body">Temukan kenyamanan dan cita rasa autentik di Café Sitaring, tempat sempurna untuk menikmati kopi sambil bersantai dalam
+                        suasana yang hangat dan ramah.</span>
+                    </div>
+                </a>
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/homestay-1.jpg" alt="">
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="destination-title">Homestay</h4>
+                        <span class="destination-text-body">Nikmati pengalaman menginap istimewa di Homestay kami, di mana kenyamanan 
+                            berpadu dengan pemandangan yang menakjubkan setiap saat.</span>
+                    </div>
+                </a>
             </div>
         </div>
+    </div>
+    <!-- Destinations End -->
+
+
+    <!-- Tourism Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic">Tourism</p>
+                <h1 class="display-6">Wisata</h1>
+            </div>
+            <div class="row g-4">
     
-        <div class="view-more">
-            <a href="paket-wisata.html" class="view-more-button">Lihat Selengkapnya</a>
+                <style>
+                    .store-item img {
+                        border-radius: 10px 10px 0 0; /* Sesuaikan dengan radius dari card */
+                    }
+                </style>
+
+                <!-- Paket eduwisata aren -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/pembuatan-gula-aren.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Eduwisata Aren</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;"> Minimal 4 Orang </p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Tiket Masuk | Nderes Nira | Proses
+                                Pembuatan
+                                Gula Aren | Snack</p>
+                            <h6 style="font-family: 'Poppins', sans-serif;"> Start From<span class="text-secondary"> Rp
+                                    260.000</span> /Paket</h6>
+                        </div>
+                        <div class="store-overlay">
+                            <a href="contact.html" class="btn btn-dark rounded-pill py-2 px-4 m-2">More Detail <i
+                                    class="fa fa-arrow-right ms-2"></i></a>
+                            <!-- <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i
+                                                                                            class="fa fa-cart-plus ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Psket Keluarga -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="store-item position-relative text-center"
+                        style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/view-3.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Paket Keluarga</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Minimal 4 Orang</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Tiket Masuk | Homestay
+                                | Makan | Seni Budaya Karawitan | Sunset Spot | Hiking</p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    530.000</span> /Paket</h6>
+                        </div>
+                        <div class="store-overlay">
+                            <a href="contact.html" class="btn btn-dark rounded-pill py-2 px-4 m-2">More Detail <i
+                                    class="fa fa-arrow-right ms-2"></i></a>
+                            <!-- <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i
+                                                            class="fa fa-cart-plus ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Paket Eduwisata Kopi -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="store-item position-relative text-center"
+                        style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/kopi.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Paket Eduwisata Kopi</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Hanya Tersedia Di Bulan Agustus-September |
+                                Minimal 4 Orang</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Tiket Masuk | Panen Kopi |
+                                Cara Pengolahan Kopi | Snack
+                            </p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    120.000</span> /Paket</h6>
+                        </div>
+                        <div class="store-overlay">
+                            <a href="contact.html" class="btn btn-dark rounded-pill py-2 px-4 m-2">More Detail <i
+                                    class="fa fa-arrow-right ms-2"></i></a>
+                            <!-- <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i
+                                                            class="fa fa-cart-plus ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="tourism.html" class="btn btn-secondary rounded-pill py-3 px-5">View More</a>
+                </div>
+    
+    
+            </div>
         </div>
-    </section>
-    <!-- Paket Wisata Section End -->
+    </div>
+    <!-- Store End -->
+
+    <!-- Local Culture Start -->
+    <div class="container-fluid product py-5 my-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid mb-4" src="img/kesenian-3.jpg" alt="">
+                        <img class="img-fluid" src="img/karawitan-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="section-title">
+                        <p class="fs-5 fw-medium fst-italic">Local Culture</p>
+                        <h1 class="display-6">Mengenal Budaya Lokal Di Desa Wisata Sitaring</h1>
+                    </div>
+                    <h4>Tari Prajuritan</h4>
+                    <h6>"Langen Wahyu Kridho Nurcahyo"</h6>
+                    <p class="mb-4 text-justify">Tari Prajuritan adalah kesenian tari khas Kabupaten Semarang yang menggambarkan gerakan para prajurit dalam latihan
+                    untuk meningkatkan kemampuan bertempur. Tarian ini menceritakan kisah Laskar Prajurit Pangeran Diponegoro, yang
+                    melibatkan gladi perang yang dikenal sebagai gelar Capit Urang. Gladi perang ini dipimpin oleh Manggolo Yudho,
+                    Wiroyudho, Wiropati, dan para prajurit lengkap. Dengan semangat yang membara, mereka mengadakan latihan perang yang
+                    dikemas dalam sebuah tarian untuk menipu dan mempersiapkan diri menghadapi penjajah kolonial Belanda. Oleh karena itu,
+                    Pangeran Diponegoro menciptakan tari massal ini yang dinamakan Tari Prajuritan.
+                    </p>
+                    <h4>Karawitan</h4>
+                    <p class="mb-4 text-justify">Karawitan merupakan salah satu seni tradisional yang ada di Dusun Puwono, Karawitan adalah kesenian musik tradisional Jawa yang mengacu pada permainan musik gamelan. Kesenian karawitan ini
+                    dikemas dengan alunan instrumen dan vokal yang indah sehingga enak untuk didengar dan dinikmati.
+                    Kesenian karawitan ini merupakan kesenian yang sangat terkenal di masyarakat Jawa dan Indonesia sebagai salah satu
+                    warisan seni dan budaya yang kaya akan nilai historis dan filosofis. Sebagai bangsa besar yang memiliki keragaman
+                    budaya, sudah sepantasnya kita melestarikan kesenian yang dimiliki bangsa Indonesia
+                </p>
+                    <!-- <a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5">Read More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Local Culture End -->
+
+    <!-- Local UMKM Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic">Local UMKM</p>
+                <h1 class="display-6">Dukung UMKM Desa Wisata Sitaring</h1>
+            </div>
+            <div class="row g-4">
+    
+                <style>
+                    .store-item img {
+                        border-radius: 10px 10px 0 0; /* Sesuaikan dengan radius dari card */
+                    }
+                </style>
+    
+                <!-- Kripik Pegagan -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center"
+                        style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/kripik-pegagan.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Keripik Pegagan</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 15.000 - Kemasan Kecil | Rp 30.000 - 1/2 Kg |
+                                Rp 55.000 - 1 Kg
+                                (Harga grosir minimal belanja 5 Kg)
+                            </p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;"></p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;"></p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    15.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/9b5nzk" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Madu Sitaring -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/madu-sitaring-2.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Madu Sitaring</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 50.00 - Botol Kecil (140 ml)  | Rp 150.000 -
+                                Botol Besar (460 - 500 ml) 
+                            </p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;"></p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;"></p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    50.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/cx02pz" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- Raska Snack -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/raska-snack.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Raska Snack</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 8.000 - 1/4 Kg | Rp
+                                15.000 - 1/2 Kg | Rp 30.000 - 1 Kg | Rp 80.000 - Satu Ball (Isi 3 Kg)
+                            </p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;"></p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;"></p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    8.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/ffb1wh" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- Gula Aren Pak Mul -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/gula-aren-pak-mul-3.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Gula Aren Pak Mul</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 25.000 - 1 Kg
+                            </p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    25.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/0vmfaa" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- Samier Mak Min -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/samier-mak-min.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Samier Mak Min</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 11.000 - 1 Bungkus
+                            </p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    11.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/ly8z9u" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- Kopi Maskumambang -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/kopi-mas-kumambang-2.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Kopi Mas Kumambang</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 15.000 - 100 gr
+                            </p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    15.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/1iy27d" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- Gula Semut Arum Sari -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/gula-aren-arum-sari.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Gula Semut Arum Sari</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 15.000 - 100 gr
+                            </p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    15.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/gxd470" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- Gucanghe Permen Jahe -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/jaguren.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Gucanghe Permen Jahe</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 15.000 - 1 toples
+                            </p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    15.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/6610er" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- Jaguren kacang gula -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center" style="border: 2px solid #ccc; border-radius: 10px;">
+                        <img class="img-fluid" src="img/umkm/gucanghe.jpg" alt="">
+                        <div class="p-4">
+                            <div class="text-center mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                            </div>
+                            <h4 class="mb-3" style="font-family: 'Poppins', sans-serif;">Jaguren Kacang Gula</h4>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Detail :</p>
+                            <p class="text-center" style="font-family: 'Poppins', sans-serif;">Rp 15.000 - 1 toples
+                            </p>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Harga</h6>
+                            <h6 style="font-family: 'Poppins', sans-serif;">Start From <span class="text-secondary">Rp
+                                    15.000</span></h6>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="https://wa.link/cjsuf4" class="btn btn-dark rounded-pill py-2 px-4 m-2">Beli Sekarang <i
+                                        class="fa fa-cart-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+    
+                <!-- <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="umkm.html" class="btn btn-secondary rounded-pill py-3 px-5">View More</a>
+                </div> -->
+    
+    
+            </div>
+        </div>
+    </div>
+    <!-- Local UMKM End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5 my-5">
+        <div class="container py-5">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic text-secondary">Testimonial</p>
+                <h1 class="display-6 text-light">Apa Yang Dikatakan Pengunjung Tentang Desa Wisata Sitaring</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
+                <div class="testimonial-item p-4 p-lg-5">
+                    <p class="mb-4">Monggo bapak/ibu yang ingin mencari tempat acara keluarga dan kopi, ke kopi sitaring, ada homestay penginapan, ada
+                    camping yang disewakan warga sekitar dengan harga yang terjangkau, rasakan juga kopi asli desa kemambang</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0" src="img/ava.jpeg" alt="">
+                        <div class="text-start ms-3">
+                            <h5>Herdi Setyawan</h5>
+                            <span class="text-secondary">Pengunjung</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item p-4 p-lg-5">
+                    <p class="mb-4">Lumayan bagus untuk pecinta pemandangan alam (gunung) , jalur menuju lokasi sangat menanjak, tapi sudah aspal halus,
+                    pemandangannya indah, udaranya masi
+                    sejuk ala² pengunungan, overall lumayan
+                    🙏</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0" src="img/ava.jpeg" alt="">
+                        <div class="text-start ms-3">
+                            <h5>Septian Aji Nugroho</h5>
+                            <span class="text-secondary">Pengunjug</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item p-4 p-lg-5">
+                    <p class="mb-4">Udara yg sejuk.. dan pemandangan alam yg sangat bagus... bisa melihat indahnya kota dari atas...</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0" src="img/ava.jpeg" alt="">
+                        <div class="text-start ms-3">
+                            <h5>Yuliana Safitri</h5>
+                            <span class="text-secondary">Pengunjung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- FAQ Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic">FAQ</p>
+                <h1 class="display-6">Frequently Asked Questions</h1>
+            </div>
+            <div class="row g-4">
+                <div class="faq-container">
+                    <!-- Only the first 5 FAQs will be displayed initially -->
+                    <div class="faq-item">
+                        <button class="faq-question">Pukul berapa jam operasional tempat Wisata Sitaring?</button>
+                        <div class="faq-answer">
+                            <p>Senin - Minggu</p>
+                            <p>08.00-20.00 WIB</p>
+                            
+                            <p>Jam operasional dapat berubah tergantung pada musim atau acara khusus.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <button class="faq-question">Berapa harga tiket masuk tempat wisata ini?</button>
+                        <div class="faq-answer">
+                            <p>Harga tiket masuk adalah Rp10.000</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <button class="faq-question">Apakah tempat wisata ini dapat diakses dengan transportasi
+                            umum?</button>
+                        <div class="faq-answer">
+                            <p>Tempat wisata ini tidak dapat diakses dengan transportasi umum, tetapi kami menyediakan jasa
+                                penjemputan
+                                menggunakan transportasi mobil. Untuk informasi lebih lanjut silahkan hubungi kami melalui
+                                menu contact di website kami.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Apakah ada fasilitas makan di tempat?</button>
+                        <div class="faq-answer">
+                            <p>Kami memiliki kafe yang menawarkan berbagai pilihan makanan dan minuman. Selain itu, terdapat
+                                area
+                                piknik bagi pengunjung yang ingin membawa makanan sendiri.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Bagaimana cara memesan tiket?</button>
+                        <div class="faq-answer">
+                            <p>Tiket dapat dipesan secara online melalui website kami atau dibeli
+                                langsung di lokasi pada hari kunjungan.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Remaining FAQs will be hidden initially -->
+                    <div class="faq-item hidden">
+                        <button class="faq-question">Apakah ada fasilitas parkir di lokasi?</button>
+                        <div class="faq-answer">
+                            <p>Ya, kami menyediakan area parkir yang luas dan aman untuk pengunjung. Parkir tersedia gratis tanpa ada biaya
+                                tambahan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item hidden">
+                        <button class="faq-question">Apakah ada penginapan di dekat tempat wisata?</button>
+                        <div class="faq-answer">
+                            <p>Ya, tersedia penginapan di dekat tempat wisata sitaring, untuk info lebih lanjut silahkan hubungi kami
+                                lewat .</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item hidden">
+                        <button class="faq-question">Apakah ada layanan penyewaan alat di tempat wisata?</button>
+                        <div class="faq-answer">
+                            <p>Ya, kami menyediakan layanan penyewaan berbagai alat untuk aktifitas camping atau perlengkapan untuk
+                                aktivitas
+                                tertentu. Biaya sewa dan ketersediaan dapat dilihat di situs web kami atau langsung di lokasi.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item hidden">
+                        <button class="faq-question">Apakah ada biaya tambahan untuk fasilitas tertentu?</button>
+                        <div class="faq-answer">
+                            <p>Beberapa fasilitas khusus, seperti tur pribadi, aktivitas tambahan, atau penggunaan alat tertentu, mungkin
+                                memerlukan
+                                biaya tambahan. Informasi lebih lanjut tersedia di situs web kami atau di loket tiket.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item hidden">
+                        <button class="faq-question">Bagaimana jika saya ingin membatalkan atau mengubah jadwal kunjungan saya?</button>
+                        <div class="faq-answer">
+                            <p>Anda dapat membatalkan atau mengubah jadwal kunjungan dengan menghubungi layanan pelanggan kami paling lambat
+                                24 jam
+                                sebelum tanggal kunjungan. Kebijakan pembatalan dan perubahan tergantung pada jenis tiket yang dibeli.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item hidden">
+                        <button class="faq-question">Bagaimana cara menghubungi layanan pelanggan jika saya memiliki pertanyaan lebih
+                            lanjut?</button>
+                        <div class="faq-answer">
+                            <p>Anda dapat menghubungi layanan pelanggan kami melalui telepon atau email yang tersedia di situs web
+                                kami. Kami siap membantu Anda dengan pertanyaan atau kebutuhan tambahan yang Anda miliki.</p>
+                        </div>
+                    </div>
+                    
+    
+                    <!-- Add more FAQ items as needed -->
+    
+                    <!-- "View More" / "View Less" Button -->
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <button id="toggle-faq" class="btn btn-secondary rounded-pill py-3 px-5">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Section End -->
+    
+
+    <!-- Contact Start -->
+    <div class="container-xxl contact py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic">Contact Us</p>
+                <h1 class="display-6">Hubungi Kami</h1>
+            </div>
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-8">
+                    <p class="text-center mb-5">Kami selalu siap membantu Anda. Jangan ragu untuk menghubungi kami kapan saja untuk pertanyaan, pemesanan, atau
+                    informasi lebih lanjut. Hubungi kami dan biarkan kami membantu menjadikan pengalaman Anda di Desa Wisata Sitaring lebih
+                    istimewa.</p>
+                    <div class="row g-5">
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-envelope fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-2">wisatasitaring@gmail.com</p>
+                            <!-- <p class="mb-0">support@example.com</p> -->
+                        </div>
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-phone fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-2">082314529466</p>
+                            <!-- <p class="mb-0">+012 345 67890</p> -->
+                        </div>
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-map-marker-alt fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-2">Puwono, Kemambang, Banyubiru, Semarang Regency, Central Java 50664</p>
+                            
+                            <!-- <p class="mb-0">New York, USA</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-secondary mb-4"  style="font-family: 'Poppins', sans-serif;">Contact Us</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-secondary me-3"></i>Puwono, Kemambang, Banyubiru,
+                        Semarang Regency, Central Java 50664</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-secondary me-3"></i>082314529466</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-secondary me-3"></i>wisatasitaring@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2"
+                            href="https://www.instagram.com/sitaringfest?igsh=Z3ZrbzVyNWl1dnRz"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2"
+                            href="https://www.facebook.com/share/g/KCHePijHVJBYPpQG/?mibextid=K35XfP"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2"
+                            href="https://youtube.com/@mbahtugi7893?si=L1AQIM8iFM5F7ErF"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-secondary mb-4"  style="font-family: 'Poppins', sans-serif;">Menu</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="tourism.html">Our Services</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-secondary mb-4"  style="font-family: 'Poppins', sans-serif;">Our Hour</h4>
+                    <p class="mb-1">Senin - Minggu</p>
+                    <p class="mb-1"  style="font-family: 'Poppins', sans-serif;">08:00 - 20:00 WIB </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
 
 
 
-
-
-        <!-- Contact Section Start-->
-        <section id="contact" class="contact">
-
-            <h2><span>Kontak </span> Kami</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Ea asperiores odit optio sequi voluptates ratione?</p>
-
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
             <div class="row">
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2923961728948!2d110.4054606!3d-7.321016299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a7f1d024ab86d%3A0x1316fe29e2f0f8a0!2sSITARING%20VIEW!5e0!3m2!1sen!2sid!4v1722531625935!5m2!1sen!2sid"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    class="map">
-                </iframe>
-
-                <form action="">
-
-                    <div class="input-group">
-
-                        <i data-feather="user"></i>
-                        <input type="text" placeholder="nama">
-
-                    </div>
-
-                    <div class="input-group">
-
-                        <i data-feather="mail"></i>
-                        <input type="email" placeholder="email">
-
-                    </div>
-
-                    <div class="input-group">
-
-                        <i data-feather="phone"></i>
-                        <input type="text" placeholder="no hp">
-
-                    </div>
-
-                    <button type="submit" class="btn">kirim pesan</button>
-                </form>
-
+                <div class="col-12 text-center">
+                    &copy; <a class="fw-medium text-secondary" href="#">Desa Wisata Sitaring</a>, All Right Reserved.
+                </div>
+                
             </div>
-        </section>
-        <!-- Contact Section end -->
-
-        <!-- Footer Start -->
-        <footer>
-            <div class="social">
-                <a href="#"><i data-feather="instagram"></i></a>
-                <a href="#"><i data-feather="twitter"></i></a>
-                <a href="#"><i data-feather="facebook"></i></a>
-            </div>
-
-            <div class="links">
-                <a href="index.html">Beranda</a>
-                <a href="#about">Tentang Kami</a>
-                <a href="paket-wisata.html">Wisata</a>
-                <!-- <a href="#menu">Menu</a> -->
-                <a href="#contact">Hubungi Kami</a>
-            </div>
-
-            <div class="credit">
-                <p>Created by Wisata Sitaring | &copy; 2024.</p>
-            </div>
-        </footer>
-        <!--  Footer end-->
+        </div>
+    </div>
+    <!-- Copyright End -->
 
 
-        <!-- Feather Icons -->
-        <script>
-            feather.replace();
-        </script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-        <!-- My Javascript -->
-        <script src="assets/js/script.js"></script>
 
-    </body>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
 </html>
